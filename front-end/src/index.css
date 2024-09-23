@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CAROUSEL */
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
+  opacity: 1;
+}
+
+/* CAROUSEL SMARTPHONES */
+
+@media (max-width: 576px) {
+  .image-carousel-1 {
+    height: 80vh;
+    object-fit: cover;
+    object-position: center left;
+  }
+
+  .image-carousel-2 {
+    height: 80vh;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .image-carousel-3 {
+    height: 80vh;
+    object-fit: cover;
+    object-position: center right;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: none;
+  }
+
+  .carousel-control-next-icon {
+    background-image: none;
+  }
+}
+
+.carousel-item {
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  opacity: 1;
+}
+
+.carousel-item-next {
+  transform: translateX(0%);
+}
+
+.carousel-item-prev {
+  transform: translateX(0%);
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+  transform: translateX(0);
+}

@@ -1,3 +1,4 @@
+import "./index.css";
 import App from './App.jsx'
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
@@ -5,7 +6,6 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import "./index.css";
 
 // importando o Bootstrap CSS
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -15,8 +15,9 @@ import Home from './pages/Home/Home.jsx';
 import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 
 // images
-import banner1 from './assets/apneia-banner-3.png'
+import banner1 from './assets/banner1.png'
 import banner2 from './assets/cpap-banner-1.png'
+import banner3 from './assets/qualidades.png'
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,7 @@ const router = createBrowserRouter([
         element: <Home
           banner1={banner1}
           banner2={banner2}
+          banner3={banner3}
         />,
       },
     ],

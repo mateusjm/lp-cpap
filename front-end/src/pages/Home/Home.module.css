@@ -2,10 +2,6 @@
   border: 1px solid red;
 }
 
-.container_start {
-  background-color: #00bf63;
-}
-
 .title {
   font-family: "Maven Pro", sans-serif;
   font-optical-sizing: auto;
@@ -35,4 +31,78 @@ h2 {
 
 .text_justify {
   text-align: justify;
+}
+
+/* home */
+
+.container_home {
+  background-image: url('../../assets/apneia-banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .container_home {
+    background-position: top left;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 100px;
+  }
+
+}
+
+/* cpap */
+
+.container_cpap {
+  background-image: url('../../assets/cpap-banner-1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .container_cpap {
+    background-position: bottom;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 100px;
+  }
+
+}
+
+/* apneia do sono */
+.container_apneia {
+  background-image: url('../../assets/qualidades.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .container_apneia {
+    background-position: center;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 100px;
+  }
+
 }
