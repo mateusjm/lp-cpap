@@ -4,8 +4,7 @@
   box-sizing: border-box;
 }
 
-
-/* CAROUSEL SMARTPHONES */
+/* carousel */
 
 a.carousel-control-next, a.carousel-control-prev {
   width: 5%;
@@ -16,45 +15,6 @@ span.carousel-control-next-icon, span.carousel-control-prev-icon {
   width: 2.5rem;
   height: 3.5rem;
   border-radius: 5px;
-}
-
-@media (max-width: 576px) {
-  .image-carousel-1 {
-    height: 65vh;
-    object-fit: cover;
-    object-position: center center;
-  } 
-
-  .image-carousel-2 {
-    height: 65vh;
-    object-fit: cover;
-    object-position: center center;
-  }
-
-  .image-carousel-3 {
-    height: 65vh;
-    object-fit: cover;
-    object-position: center right;
-  }
-
-  .carousel-control-prev-icon {
-    background-image: none;
-  }
-
-  .carousel-control-next-icon {
-    background-image: none;
-  }
-
-  a.carousel-control-next, a.carousel-control-prev {
-    width: 8%;
-    opacity: .9;
-  }
-
-  span.carousel-control-next-icon, span.carousel-control-prev-icon {
-    width: 2rem;
-    height: 3rem;
-    border-radius: 5px;
-  }
 }
 
 .carousel-item {
@@ -86,4 +46,51 @@ span.carousel-control-next-icon, span.carousel-control-prev-icon {
     background-color: #00bf63;
     width: 1%;
     opacity: none;
+}
+
+/* menu */
+nav.navbar {
+  --bs-navbar-toggler-border-color: none;
+  --bs-navbar-toggler-focus-width: none;
+}
+
+/* media queries */
+@media (max-width: 576px) {
+  .image-carousel-1 {
+    height: 65vh;
+    object-fit: cover;
+    object-position: center center;
+  } 
+
+  .image-carousel-2 {
+    height: 65vh;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .image-carousel-3 {
+    height: 65vh;
+    object-fit: cover;
+    object-position: center right;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: none;
+  }
+
+  .carousel-control-next-icon {
+    background-image: none;
+  }
+
+  a.carousel-control-next, a.carousel-control-prev {
+    width: 8%;
+    opacity: .9;
+    display: none;
+  }
+
+  span.carousel-control-next-icon, span.carousel-control-prev-icon {
+    width: 2rem;
+    height: 3rem;
+    border-radius: 5px;
+  }
 }

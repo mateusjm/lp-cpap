@@ -33,21 +33,21 @@ const Header = ({ logo }) => {
           <Nav className='ms-auto' style={{ fontFamily: "Maven Pro", fontWeight: 500 }}>
             <Nav.Link
               onClick={() => scrollToElement('home')} 
-              style={{ cursor: 'pointer', color: '#077140' }} 
+              style={{ cursor: 'pointer', color: '#00bf63' }} 
               className={`me-3 ${styles.active_link}`}
             >
               Ínicio
             </Nav.Link>
             <Nav.Link 
               onClick={() => scrollToElement('cpap')} 
-              style={{ cursor: 'pointer', color: '#077140' }} 
+              style={{ cursor: 'pointer', color: '#00bf63' }} 
               className={`me-3 ${styles.active_link}`}
             >
               CPAP
             </Nav.Link>
             <Nav.Link 
               onClick={() => scrollToElement('apneia-do-sono')} 
-              style={{ cursor: 'pointer', color: '#077140' }} 
+              style={{ cursor: 'pointer', color: '#00bf63' }} 
               className={`me-3 ${styles.active_link}`}
             >
               Apneia do Sono
