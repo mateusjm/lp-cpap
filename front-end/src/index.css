@@ -15,21 +15,21 @@
 
 @media (max-width: 576px) {
   .image-carousel-1 {
-    height: 80vh;
+    height: 40vh;
     object-fit: cover;
     object-position: center left;
   }
 
   .image-carousel-2 {
-    height: 80vh;
+    height: 40vh;
     object-fit: cover;
-    object-position: center center;
+    object-position: center left;
   }
 
   .image-carousel-3 {
-    height: 80vh;
+    height: 40vh;
     object-fit: cover;
-    object-position: center right;
+    object-position: center left;
   }
 
   .carousel-control-prev-icon {

@@ -16,8 +16,8 @@ import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 
 // images
 import banner1 from './assets/banner1.png'
-import banner2 from './assets/cpap-banner-1.png'
-import banner3 from './assets/qualidades.png'
+import banner2 from './assets/banner2.png'
+import banner3 from './assets/banner3.png'
 
 const router = createBrowserRouter([
   {

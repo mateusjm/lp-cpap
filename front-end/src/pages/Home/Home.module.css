@@ -36,35 +36,17 @@ h2 {
 /* home */
 
 .container_home {
-  background-image: url('../../assets/apneia-banner.png');
+  background-color: #fff;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
-}
-
-@media (max-width: 768px) {
-  .container_home {
-    background-position: top left;
-  }
-
-  h2 {
-    font-size: 30px;
-  }
-
-  .title {
-    text-align: center;
-    font-size: 100px;
-  }
-
 }
 
 /* cpap */
 
 .container_cpap {
-  background-image: url('../../assets/cpap-banner-1.png');
+  background-color: #000;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 @media (max-width: 768px) {
@@ -85,10 +67,9 @@ h2 {
 
 /* apneia do sono */
 .container_apneia {
-  background-image: url('../../assets/qualidades.png');
+  background-color: #00bf63;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 @media (max-width: 768px) {
