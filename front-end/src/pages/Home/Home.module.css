@@ -2,22 +2,18 @@
   border: 1px solid red;
 }
 
-.title {
-  font-family: "Maven Pro", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
-  font-size: 150px;
-  color: #077140;
-}
 
 h2 {
   font-family: "Maven Pro", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 50px;
+  font-size: 40px;
   color: #00bf63;
+}
+
+h3 {
+  font-style: italic;
 }
 
 .btn_style {

@@ -21,6 +21,7 @@ import banner3 from './assets/banner3.png'
 import banner1sm from './assets/banner1-sm.png'
 import banner2sm from './assets/banner2-sm.png'
 import banner3sm from './assets/banner3-sm.png'
+import provida from './assets/pro-vida.png'
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,7 @@ const router = createBrowserRouter([
           banner1sm={banner1sm}
           banner2sm={banner2sm}
           banner3sm={banner3sm}
+          provida={provida}
         />,
       },
     ],
