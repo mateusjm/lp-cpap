@@ -32,36 +32,3 @@ h2 {
 .text_justify {
   text-align: justify;
 }
-
-
-@media (max-width: 768px) {
-  .container_cpap {
-    background-position: bottom;
-  }
-
-  h2 {
-    font-size: 40px;
-  }
-
-  .title {
-    text-align: center;
-    font-size: 100px;
-  }
-
-}
-
-@media (max-width: 768px) {
-  .container_apneia {
-    background-position: center;
-  }
-
-  h2 {
-    font-size: 40px;
-  }
-
-  .title {
-    text-align: center;
-    font-size: 100px;
-  }
-
-}

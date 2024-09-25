@@ -7,6 +7,17 @@
 
 /* CAROUSEL SMARTPHONES */
 
+a.carousel-control-next, a.carousel-control-prev {
+  width: 5%;
+  opacity: .9;
+}
+
+span.carousel-control-next-icon, span.carousel-control-prev-icon {
+  width: 2.5rem;
+  height: 3.5rem;
+  border-radius: 5px;
+}
+
 @media (max-width: 576px) {
   .image-carousel-1 {
     height: 65vh;
@@ -32,6 +43,17 @@
 
   .carousel-control-next-icon {
     background-image: none;
+  }
+
+  a.carousel-control-next, a.carousel-control-prev {
+    width: 8%;
+    opacity: .9;
+  }
+
+  span.carousel-control-next-icon, span.carousel-control-prev-icon {
+    width: 2rem;
+    height: 3rem;
+    border-radius: 5px;
   }
 }
 
@@ -64,9 +86,4 @@
     background-color: #00bf63;
     width: 1%;
     opacity: none;
-}
-
-.carousel-control-next, .carousel-control-prev {
-  width: 5%;
-  opacity: .9;
 }
