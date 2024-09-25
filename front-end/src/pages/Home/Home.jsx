@@ -87,7 +87,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
       id='home'
       >
       <Row className={`d-flex align-items-center justify-content-center`}>
-      <Col xl={6} md={6} xs={12}>
+      <Col xl={6} lg={6} md={12} xs={12} className='p-3'>
           <h2 className={`text-center mb-4`}>
             Pró-Vida Cirúrgica:
           </h2>
@@ -100,16 +100,16 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
 
             <p className={`text-black mb-5 ${styles.text_justify}`}>Nos responsabilizamos por todo o processo de instalação do seu aparelho, incluindo a configuração do aplicativo e o acompanhamento inicial da sua compra. Tudo para que você tenha uma experiência tranquila e sem complicações.</p>
         </Col>
-        <Col xl={6} md={6} xs={12} className='text-center'>
+        <Col xl={6} lg={6} md={12} xs={12} className='text-center'>
           <img className='img-fluid' src={provida} width={450} alt="" />
         </Col>   
         <Col className='d-flex align-items-end justify-content-center mt-3'>
           <Button 
             className={`${styles.btn_style}`}
             style={{
-              width: '300px'
+              width: '50%'
             }}
-            variant='success'>Alugue Agora</Button>
+            variant='success'>Comprar Agora</Button>
         </Col>
       </Row>
     </Container>

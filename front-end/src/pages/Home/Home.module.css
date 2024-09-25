@@ -8,7 +8,7 @@ h2 {
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 40px;
+  font-size: 50px;
   color: #00bf63;
 }
 
@@ -28,3 +28,10 @@ h3 {
 .text_justify {
   text-align: justify;
 }
+
+@media (max-width: 576px) {
+  h2 {
+    font-size: 40px;
+  }
+}
+
