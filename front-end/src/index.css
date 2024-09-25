@@ -22,7 +22,7 @@ span.carousel-control-next-icon, span.carousel-control-prev-icon {
   .image-carousel-1 {
     height: 65vh;
     object-fit: cover;
-    object-position: center left;
+    object-position: center center;
   } 
 
   .image-carousel-2 {
