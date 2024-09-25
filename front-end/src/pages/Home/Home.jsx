@@ -1,47 +1,95 @@
 import React from 'react'
+import { useState, useEffect } from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import { Carousel } from 'react-bootstrap'
 
 // CSS
 import styles from '../Home/Home.module.css'
 
-const Home = ({banner1, banner2, banner3}) => {
+const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm}) => {
+
+  const [telaMenor, setTelaMenor] = useState(false);
+
+  useEffect(() => {
+    const verificarTamanhoTela = () => {
+      setTelaMenor(window.innerWidth < 768);
+    };
+
+    verificarTamanhoTela();
+    window.addEventListener('resize', verificarTamanhoTela);
+
+    return () => window.removeEventListener('resize', verificarTamanhoTela);
+  }, []);
+
   return (
     <>
     <Carousel indicators={false}>
       <Carousel.Item interval={3000}>
         <a target='blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">
-          <img
-            className='d-block w-100 image-carousel-1'
-            src={banner1}
-            alt="banner1"
-            style={{
-              cursor: 'pointer'
-            }}
-            />
+            {telaMenor ? (
+              <img
+                className="d-block w-100 image-carousel-1"
+                src={banner1sm}
+                alt="Banner pequeno"
+                style={{
+                  cursor: 'pointer'
+                }}
+              />
+            ) : (
+              <img
+                className="d-block w-100"
+                src={banner1}
+                alt="Banner grande"
+              />
+            )}    
         </a>
       </Carousel.Item>
       <Carousel.Item interval={3000}>
-        <img
-          className='d-block w-100 image-carousel-2'
-          src={banner2}
-          alt="banner2"
-          />
+        <a target='blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">
+            {telaMenor ? (
+              <img
+                className="d-block w-100 image-carousel-2"
+                src={banner2sm}
+                alt="Banner pequeno"
+                style={{
+                  cursor: 'pointer'
+                }}
+              />
+            ) : (
+              <img
+                className="d-block w-100"
+                src={banner2}
+                alt="Banner grande"
+              />
+            )}    
+        </a>
       </Carousel.Item>
       <Carousel.Item interval={3000}>
-        <img
-          className='d-block w-100 image-carousel-3'
-          src={banner3}
-          alt="banner3"
-          />
+        <a target='blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">
+            {telaMenor ? (
+              <img
+                className="d-block w-100 image-carousel-3"
+                src={banner3sm}
+                alt="Banner pequeno"
+                style={{
+                  cursor: 'pointer'
+                }}
+              />
+            ) : (
+              <img
+                className="d-block w-100"
+                src={banner3}
+                alt="Banner grande"
+              />
+            )}    
+        </a>
       </Carousel.Item>
+      
     </Carousel>
 
     <Container fluid
-      className={`d-flex align-items-center ${styles.container_home}`} 
+      className={`d-flex align-items-center ${styles.container_home} h-100`} 
       id='home'
-      style={{
-        height: `1000px`}}
       >
       <Row className={`d-flex align-items-center justify-content-center p-5`}>
         <Col xl={8} md={8} xs={12}>
@@ -60,14 +108,12 @@ const Home = ({banner1, banner2, banner3}) => {
     </Container>
 
     <Container fluid
-      className={`d-flex align-items-center ${styles.container_cpap}`} 
+      className={`d-flex align-items-center ${styles.container_cpap} h-100`} 
       id='cpap'
-      style={{
-        height: `1000px`}}
       >
       <Row className={`d-flex align-items-center justify-content-center p-5`}>
         <Col xl={8} md={8} xs={12}>
-          <h2 className='text-success text-center mb-5'>Apneia do Sono</h2>
+          <h2 className='text-success text-center mb-5'>CPAP</h2>
           <p className={`text-white ${styles.text_justify}`}>A apneia do sono é um distúrbio comum, mas muitas vezes subdiagnosticado, que pode impactar seriamente a qualidade de vida. Este problema provoca pausas na respiração durante o sono, resultando em um sono fragmentado e de baixa qualidade. As consequências incluem fadiga diurna, dificuldades de concentração e um aumento do risco de doenças cardiovasculares, hipertensão e diabetes.
 
           Tratar a apneia do sono é crucial não apenas para melhorar a qualidade do sono, mas também para promover a saúde geral e o bem-estar. Uma das soluções mais eficazes para este problema é o uso de um aparelho CPAP (pressão positiva contínua nas vias aéreas).</p>
@@ -82,10 +128,8 @@ const Home = ({banner1, banner2, banner3}) => {
     </Container>
 
     <Container fluid
-      className={`d-flex align-items-center ${styles.container_apneia}`} 
+      className={`d-flex align-items-center ${styles.container_apneia} h-100`} 
       id='apneia-do-sono'
-      style={{
-        height: `1000px`}}
       >
       <Row className={`d-flex align-items-center justify-content-center p-5`}>
         <Col xl={8} md={8} xs={12}>

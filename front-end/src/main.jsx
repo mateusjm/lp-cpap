@@ -18,6 +18,9 @@ import ErrorPage from './pages/ErrorPage/ErrorPage.jsx';
 import banner1 from './assets/banner1.png'
 import banner2 from './assets/banner2.png'
 import banner3 from './assets/banner3.png'
+import banner1sm from './assets/banner1-sm.png'
+import banner2sm from './assets/banner2-sm.png'
+import banner3sm from './assets/banner3-sm.png'
 
 const router = createBrowserRouter([
   {
@@ -31,6 +34,9 @@ const router = createBrowserRouter([
           banner1={banner1}
           banner2={banner2}
           banner3={banner3}
+          banner1sm={banner1sm}
+          banner2sm={banner2sm}
+          banner3sm={banner3sm}
         />,
       },
     ],
