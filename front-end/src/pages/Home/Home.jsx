@@ -107,7 +107,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
           <Button 
             className={`${styles.btn_style}`}
             style={{
-              width: '50%'
+              width: '60%'
             }}
             variant='success'>Comprar Agora</Button>
         </Col>
