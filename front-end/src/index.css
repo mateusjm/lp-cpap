@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-/* CAROUSEL */
-
-.carousel-control-next, .carousel-control-prev {
-  width: 5%;
-  opacity: 1;
-}
 
 /* CAROUSEL SMARTPHONES */
 
@@ -63,4 +57,16 @@
 .carousel-item-next.carousel-item-left,
 .carousel-item-prev.carousel-item-right {
   transform: translateX(0);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #00bf63;
+    width: 1%;
+    opacity: none;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  width: 5%;
+  opacity: .9;
 }

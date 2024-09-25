@@ -12,7 +12,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm}) => {
 
   useEffect(() => {
     const verificarTamanhoTela = () => {
-      setTelaMenor(window.innerWidth < 768);
+      setTelaMenor(window.innerWidth < 576);
     };
 
     verificarTamanhoTela();
@@ -84,15 +84,17 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm}) => {
             )}    
         </a>
       </Carousel.Item>
-      
     </Carousel>
 
     <Container fluid
-      className={`d-flex align-items-center ${styles.container_home} h-100`} 
+      className={`d-flex align-items-center bg-white h-100 p-5`} 
       id='home'
       >
-      <Row className={`d-flex align-items-center justify-content-center p-5`}>
-        <Col xl={8} md={8} xs={12}>
+      <Row className={`d-flex align-items-center justify-content-center`}>
+        <Col xl={6} md={6} xs={12}>
+          <img src="" alt="" />
+        </Col>
+        <Col xl={6} md={6} xs={12}>
           <h2 className='text-success text-center mb-5'>Pró-Vida</h2>
           <p className={`text-black ${styles.text_justify}`}>A apneia do sono é um distúrbio comum, mas muitas vezes subdiagnosticado, que pode impactar seriamente a qualidade de vida. Este problema provoca pausas na respiração durante o sono, resultando em um sono fragmentado e de baixa qualidade. As consequências incluem fadiga diurna, dificuldades de concentração e um aumento do risco de doenças cardiovasculares, hipertensão e diabetes.
 
@@ -108,11 +110,11 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm}) => {
     </Container>
 
     <Container fluid
-      className={`d-flex align-items-center ${styles.container_cpap} h-100`} 
+      className={`d-flex align-items-center bg-black`} 
       id='cpap'
       >
-      <Row className={`d-flex align-items-center justify-content-center p-5`}>
-        <Col xl={8} md={8} xs={12}>
+      <Row className={`d-flex align-items-center justify-content-center h-100 p-5`}>
+        <Col xl={6} md={6} xs={12}>
           <h2 className='text-success text-center mb-5'>CPAP</h2>
           <p className={`text-white ${styles.text_justify}`}>A apneia do sono é um distúrbio comum, mas muitas vezes subdiagnosticado, que pode impactar seriamente a qualidade de vida. Este problema provoca pausas na respiração durante o sono, resultando em um sono fragmentado e de baixa qualidade. As consequências incluem fadiga diurna, dificuldades de concentração e um aumento do risco de doenças cardiovasculares, hipertensão e diabetes.
 
@@ -122,16 +124,21 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm}) => {
 
           Investir em um CPAP não é apenas uma escolha por um sono melhor; é um passo importante para cuidar da sua saúde a longo prazo. Se você sofre de apneia do sono, não deixe de considerar essa solução eficaz e consulte um especialista para saber mais sobre como o CPAP pode se encaixar na sua rotina.</p>
 
-          <Col className='d-flex align-items-end justify-content-center'><Button className={`${styles.btn_style}`} variant='dark'>Compre Agora</Button></Col>
+          <Col className='d-flex align-items-end justify-content-center'><Button className={`${styles.btn_style}`} variant='success'>Alugue Agora</Button></Col>
+        </Col>
+        <Col xl={6} md={6} xs={12}>
+          <img src="" alt="" />
         </Col>
       </Row>
     </Container>
 
+    <Container></Container>
+
     <Container fluid
-      className={`d-flex align-items-center ${styles.container_apneia} h-100`} 
+      className={`d-flex align-items-center bg-success`} 
       id='apneia-do-sono'
       >
-      <Row className={`d-flex align-items-center justify-content-center p-5`}>
+      <Row className={`d-flex align-items-center justify-content-center h-100 p-5`}>
         <Col xl={8} md={8} xs={12}>
           <h2 className='text-white text-center mb-5'>Apneia do Sono</h2>
           <p className={`text-black ${styles.text_justify}`}>A apneia do sono é um distúrbio comum, mas muitas vezes subdiagnosticado, que pode impactar seriamente a qualidade de vida. Este problema provoca pausas na respiração durante o sono, resultando em um sono fragmentado e de baixa qualidade. As consequências incluem fadiga diurna, dificuldades de concentração e um aumento do risco de doenças cardiovasculares, hipertensão e diabetes.
@@ -142,7 +149,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm}) => {
 
           Investir em um CPAP não é apenas uma escolha por um sono melhor; é um passo importante para cuidar da sua saúde a longo prazo. Se você sofre de apneia do sono, não deixe de considerar essa solução eficaz e consulte um especialista para saber mais sobre como o CPAP pode se encaixar na sua rotina.</p>
 
-          <Col className='d-flex align-items-end justify-content-center'><Button className={`${styles.btn_style}`} variant='outline-success'>Alugue Agora</Button></Col>
+          <Col className='d-flex align-items-end justify-content-center'><Button className={`${styles.btn_style}`} variant='outline-dark'>Alugue Agora</Button></Col>
         </Col>
       </Row>
     </Container>

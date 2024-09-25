@@ -33,21 +33,6 @@ h2 {
   text-align: justify;
 }
 
-/* home */
-
-.container_home {
-  background-color: #fff;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* cpap */
-
-.container_cpap {
-  background-color: #000;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 @media (max-width: 768px) {
   .container_cpap {
@@ -63,13 +48,6 @@ h2 {
     font-size: 100px;
   }
 
-}
-
-/* apneia do sono */
-.container_apneia {
-  background-color: #00bf63;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 @media (max-width: 768px) {
