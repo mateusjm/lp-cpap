@@ -98,12 +98,12 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
 
             <p className={`text-black mb-3 ${styles.text_justify}`}>Com <span style={{color: '#00bf63'}}>atendimento especializado</span> na venda de aparelhos respiratórios e pulmonares, oferecendo também <span style={{color: '#00bf63'}}>assistência técnica</span> e serviços de manutenção. Nossa prioridade é garantir que você tire todas as suas dúvidas e utilize seu <span style={{color: '#00bf63'}}>CPAP</span> da melhor maneira possível.</p>
 
-            <p className={`text-black mb-5 ${styles.text_justify}`}>Nos responsabilizamos por todo o processo de instalação do seu aparelho, incluindo a configuração do aplicativo e o acompanhamento inicial da sua compra. Tudo para que você tenha uma experiência tranquila e sem complicações.</p>
+            <p className={`text-black mb-5 ${styles.text_justify}`}>Nos responsabilizamos por todo o <span style={{color: '#00bf63'}}>processo de instalação</span> do seu aparelho, incluindo a <span style={{color: '#00bf63'}}>configuração do aplicativo</span> e o <span style={{color: '#00bf63'}}>acompanhamento inicial</span> da sua compra. Tudo para que você tenha uma experiência tranquila e sem complicações.</p>
         </Col>
-        <Col xl={6} lg={6} md={12} xs={12} className='text-center'>
+        <Col xl={6} lg={6} md={12} xs={12} className='text-center mb-5'>
           <img className='img-fluid' src={provida} width={450} alt="" />
         </Col>   
-        <Col className='d-flex align-items-end justify-content-center mt-3'>
+        <Col className='d-flex align-items-end justify-content-center'>
           <Button 
             className={`${styles.btn_style}`}
             style={{
