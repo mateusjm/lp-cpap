@@ -2,13 +2,16 @@
   border: 1px solid red;
 }
 
+.container_reviews {
+  color: #00bf63;;
+}
 
 h2 {
   font-family: "Maven Pro", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
-  font-size: 50px;
+  font-size: 3rem;
   color: #00bf63;
 }
 
@@ -31,7 +34,11 @@ h3 {
 
 @media (max-width: 576px) {
   h2 {
-    font-size: 38px;
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
   }
 }
 

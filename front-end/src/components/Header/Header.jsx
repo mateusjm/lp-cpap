@@ -25,37 +25,39 @@ const Header = ({ logo }) => {
           <img src={logo} alt="Pró-Vida Cirúrgica" width={150} />
         </Navbar.Brand>
         <Navbar.Toggle 
-          aria-controls="basic-navbar-nav" 
           onClick={toggleMenu} 
-          className="ms-auto" 
         />
-        <Navbar.Collapse id="basic-navbar-nav" in={menuOpen}>
+        <Navbar.Collapse in={menuOpen}>
           <Nav className='ms-auto' style={{ fontFamily: "Maven Pro", fontWeight: 500 }}>
             <Nav.Link
               onClick={() => scrollToElement('home')} 
-              style={{ cursor: 'pointer', color: '#000' }} 
               className={`me-3 ${styles.active_link}`}
             >
               Ínicio
             </Nav.Link>
             <Nav.Link 
               onClick={() => scrollToElement('cpap')} 
-              style={{ cursor: 'pointer', color: '#000' }} 
               className={`me-3 ${styles.active_link}`}
             >
               CPAP
             </Nav.Link>
             <Nav.Link 
               onClick={() => scrollToElement('apneia-do-sono')} 
-              style={{ cursor: 'pointer', color: '#000' }} 
               className={`me-3 ${styles.active_link}`}
             >
               Apneia do Sono
+            </Nav.Link>
+            <Nav.Link 
+              onClick={() => scrollToElement('apneia-do-sono')} 
+              className={`me-3 ${styles.active_link}`}
+            >
+              FAQ
             </Nav.Link>
             <Button 
               variant='outline-success' 
               onClick={() => scrollToElement('contato')} 
               style={{ cursor: 'pointer', fontWeight: 500 }}
+              className='ms-auto'
             >
               Entrar em Contato
             </Button>

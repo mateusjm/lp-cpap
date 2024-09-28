@@ -13,6 +13,10 @@ span a {
   color: #00bf63;
 }
 
+img.reviews{
+  border-radius: 20px;
+}
+
 /* carousel */
 
 a.carousel-control-next, a.carousel-control-prev {
@@ -108,5 +112,17 @@ nav.navbar {
   p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
+  }
+}
+
+@media (min-width: 576px) {
+  .reviews {
+    width: 85%;
+  }
+}
+
+@media (max-width: 576px) {
+  .reviews {
+    width: 85%;
   }
 }

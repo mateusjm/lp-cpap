@@ -23,6 +23,18 @@ import banner2sm from './assets/banner2-sm.png'
 import banner3sm from './assets/banner3-sm.png'
 import provida from './assets/pro-vida.png'
 
+// reviews
+import avaliacao1 from './assets/avaliacao-1.png'
+import avaliacao2 from './assets/avaliacao-2.png'
+import avaliacao3 from './assets/avaliacao-3.png'
+import avaliacao4 from './assets/avaliacao-4.png'
+import avaliacao5 from './assets/avaliacao-5.png'
+import avaliacao6 from './assets/avaliacao-6.png'
+import avaliacao7 from './assets/avaliacao-7.png'
+import avaliacao8 from './assets/avaliacao-8.png'
+import avaliacao9 from './assets/avaliacao-9.png'
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -39,6 +51,15 @@ const router = createBrowserRouter([
           banner2sm={banner2sm}
           banner3sm={banner3sm}
           provida={provida}
+          avaliacao1={avaliacao1}
+          avaliacao2={avaliacao2}
+          avaliacao3={avaliacao3}
+          avaliacao4={avaliacao4}
+          avaliacao5={avaliacao5}
+          avaliacao6={avaliacao6}
+          avaliacao7={avaliacao7}
+          avaliacao8={avaliacao8}
+          avaliacao9={avaliacao9}
         />,
       },
     ],

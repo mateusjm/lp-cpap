@@ -6,7 +6,7 @@ import { Carousel } from 'react-bootstrap'
 // CSS
 import styles from '../Home/Home.module.css'
 
-const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provida}) => {
+const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provida, avaliacao1, avaliacao2, avaliacao3, avaliacao4, avaliacao5, avaliacao6, avaliacao7, avaliacao8, avaliacao9}) => {
 
   const [telaMenor, setTelaMenor] = useState(false);
 
@@ -23,6 +23,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
 
   return (
     <>
+    {/* carousel banner */}
     <Carousel indicators={false}>
       <Carousel.Item interval={3000}>
         <a target='blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">
@@ -45,54 +46,54 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
         </a>
       </Carousel.Item>
       <Carousel.Item interval={3000}>
-            {telaMenor ? (
-              <img
-                className="d-block w-100 image-carousel-2"
-                src={banner2sm}
-                alt="Banner pequeno"
-                style={{
-                  cursor: 'pointer'
-                }}
-              />
-            ) : (
-              <img
-                className="d-block w-100"
-                src={banner2}
-                alt="Banner grande"
-              />
-            )}    
+        {telaMenor ? (
+          <img
+            className="d-block w-100 image-carousel-2"
+            src={banner2sm}
+            alt="Banner pequeno"
+            style={{
+              cursor: 'pointer'
+            }}
+          />
+        ) : (
+          <img
+            className="d-block w-100"
+            src={banner2}
+            alt="Banner grande"
+          />
+        )}    
       </Carousel.Item>
       <Carousel.Item interval={3000}>
-            {telaMenor ? (
-              <img
-                className="d-block w-100 image-carousel-3"
-                src={banner3sm}
-                alt="Banner pequeno"
-                style={{
-                  cursor: 'pointer'
-                }}
-              />
-            ) : (
-              <img
-                className="d-block w-100"
-                src={banner3}
-                alt="Banner grande"
-              />
-            )}    
+        {telaMenor ? (
+          <img
+            className="d-block w-100 image-carousel-3"
+            src={banner3sm}
+            alt="Banner pequeno"
+            style={{
+              cursor: 'pointer'
+            }}
+          />
+        ) : (
+          <img
+            className="d-block w-100"
+            src={banner3}
+            alt="Banner grande"
+          />
+        )}    
       </Carousel.Item>
     </Carousel>
-
+    {/* pro-vida */}
     <Container fluid
-      className={`d-flex align-items-center bg-white h-100 p-5`} 
+      className={`d-flex align-items-center bg-white h-100 p-4`} 
       id='home'
       >
       <Row className={`d-flex align-items-center justify-content-center`}>
       <Col xl={6} lg={6} md={12} xs={12} className='p-3'>
-          <h2 className={`text-center mb-4`}>
+          <h2 className={`text-center mt-5 mb-4`}>
             Pró-Vida Cirúrgica:
           </h2>
           <h3 className='text-black text-center mb-5'>
-            Há mais de 22 anos cuidando da sua saúde
+            Há mais de 22 anos cuidando da sua saúde!
           </h3>
             <p className={`text-black mb-3 ${styles.text_justify}`}>A <span style={{color: '#00bf63'}}><a target='blank' href="https://providacirurgica.com.br/">Pró-Vida Cirúrgica</a></span> é referência em artigos hospitalares, com mais de 22 anos de atuação em Ponte Nova - MG e região. Seu objetivo é atender às necessidades da população local, proporcionando <span style={{color: '#00bf63'}}>saúde</span> e <span style={{color: '#00bf63'}}>bem-estar</span> diretamente em sua casa.</p>
 
@@ -100,10 +101,10 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
 
             <p className={`text-black mb-5 ${styles.text_justify}`}>Nos responsabilizamos por todo o <span style={{color: '#00bf63'}}>processo de instalação</span> do seu aparelho, incluindo a <span style={{color: '#00bf63'}}>configuração do aplicativo</span> e o <span style={{color: '#00bf63'}}>acompanhamento inicial</span> da sua compra. Tudo para que você tenha uma experiência tranquila e sem complicações.</p>
         </Col>
-        <Col xl={6} lg={6} md={12} xs={12} className='text-center mb-5'>
+        <Col xl={6} lg={6} md={12} xs={12} className='d-none d-lg-block text-center mb-5'>
           <img className='img-fluid' src={provida} width={450} alt="" />
         </Col>   
-        <Col className='d-flex align-items-end justify-content-center'>
+        <Col className='d-flex align-items-end justify-content-center mb-5'>
           <Button 
             className={`${styles.btn_style}`}
             style={{
@@ -113,7 +114,54 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
         </Col>
       </Row>
     </Container>
-
+    {/* reviews */}
+    <Container fluid className='p-4 bg-success'>
+      <h2 style={{
+        color: '#000'
+      }} className='text-center text-light mt-5 mb-3'>Confira nossas avaliações:</h2>
+        <Carousel indicators={false} className='mb-5'>
+         <Carousel.Item interval={3000}>
+            <Row className='align-items-center text-center justify-content-around '>
+              <Col xs={12} md={4} lg={4}>
+                <img className='img-fluid m-3 reviews' src={avaliacao1} alt="" />
+              </Col>
+              <Col className='d-none d-md-block' xs={12} md={4} lg={4}>
+                <img className='img-fluid m-3 reviews' src={avaliacao2} alt="" />
+              </Col>
+              <Col className='d-none d-md-block' xs={12} md={4} lg={4}>
+                <img className='img-fluid m-3 reviews' src={avaliacao3} alt="" />
+              </Col>
+            </Row>
+         </Carousel.Item>
+         <Carousel.Item interval={3000}>
+            <Row className='align-items-center text-center justify-content-around '>
+              <Col xs={12} md={4} lg={4}>
+                <img className='img-fluid m-3 reviews' src={avaliacao4} alt="" />
+              </Col>
+              <Col className='d-none d-md-block' xs={12} md={4} lg={4}>
+                <img className='img-fluid m-3 reviews' src={avaliacao5} alt="" />
+              </Col>
+              <Col className='d-none d-md-block' xs={12} md={4} lg={4}>
+                <img className='img-fluid m-3 reviews' src={avaliacao6} alt="" />
+              </Col>
+            </Row>
+         </Carousel.Item>
+         <Carousel.Item interval={3000}>
+            <Row className='align-items-center text-center justify-content-around '>
+              <Col xs={12} md={4} lg={4}>
+                <img className='img-fluid m-3 reviews' src={avaliacao7} alt="" />
+              </Col>
+              <Col className='d-none d-md-block' xs={12} md={4} lg={4}>
+                <img className='img-fluid m-3 reviews' src={avaliacao8} alt="" />
+              </Col>
+              <Col className='d-none d-md-block' xs={12} md={4} lg={4}>
+                <img className='img-fluid m-3 reviews' src={avaliacao9} alt="" />
+              </Col>
+            </Row>
+         </Carousel.Item>
+        </Carousel>
+    </Container>
+    {/* cpap */}
     <Container fluid
       className={`d-flex align-items-center bg-black`} 
       id='cpap'
@@ -136,9 +184,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
         </Col>
       </Row>
     </Container>
-
-    <Container></Container>
-
+      {/* apneia-do-sono */}
     <Container fluid
       className={`d-flex align-items-center bg-success`} 
       id='apneia-do-sono'
