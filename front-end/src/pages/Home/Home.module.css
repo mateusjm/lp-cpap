@@ -42,3 +42,10 @@ h3 {
   }
 }
 
+@media (min-width: 768px) {
+  .image_provida {
+    width: 90%;
+  }
+}
+
+

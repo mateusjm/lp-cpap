@@ -83,12 +83,12 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
       </Carousel.Item>
     </Carousel>
     {/* pro-vida */}
-    <Container fluid
+    <Container
       className={`d-flex align-items-center bg-white h-100 p-4`} 
       id='home'
       >
-      <Row className={`d-flex align-items-center justify-content-center`}>
-      <Col xl={6} lg={6} md={12} xs={12} className='p-3'>
+      <Row className={`d-flex align-items-end justify-content-center`}>
+      <Col xl={6} lg={12} md={12} xs={12} className='p-3'>
           <h2 className={`text-center mt-5 mb-4`}>
             Pró-Vida Cirúrgica:
           </h2>
@@ -96,13 +96,11 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
             Há mais de 22 anos cuidando da sua saúde!
           </h3>
             <p className={`text-black mb-3 ${styles.text_justify}`}>A <span style={{color: '#00bf63'}}><a target='blank' href="https://providacirurgica.com.br/">Pró-Vida Cirúrgica</a></span> é referência em artigos hospitalares, com mais de 22 anos de atuação em Ponte Nova - MG e região. Seu objetivo é atender às necessidades da população local, proporcionando <span style={{color: '#00bf63'}}>saúde</span> e <span style={{color: '#00bf63'}}>bem-estar</span> diretamente em sua casa.</p>
-
             <p className={`text-black mb-3 ${styles.text_justify}`}>Com <span style={{color: '#00bf63'}}>atendimento especializado</span> na venda de aparelhos respiratórios e pulmonares, oferecendo também <span style={{color: '#00bf63'}}>assistência técnica</span> e serviços de manutenção. Nossa prioridade é garantir que você tire todas as suas dúvidas e utilize seu <span style={{color: '#00bf63'}}>CPAP</span> da melhor maneira possível.</p>
-
             <p className={`text-black mb-5 ${styles.text_justify}`}>Nos responsabilizamos por todo o <span style={{color: '#00bf63'}}>processo de instalação</span> do seu aparelho, incluindo a <span style={{color: '#00bf63'}}>configuração do aplicativo</span> e o <span style={{color: '#00bf63'}}>acompanhamento inicial</span> da sua compra. Tudo para que você tenha uma experiência tranquila e sem complicações.</p>
         </Col>
-        <Col xl={6} lg={6} md={12} xs={12} className='d-none d-lg-block text-center mb-5'>
-          <img className='img-fluid' src={provida} width={450} alt="" />
+        <Col xl={6} lg={12} md={12} xs={12} className='d-none d-lg-block text-center mb-5'>
+          <img className={`img-fluid ${styles.image_provida}`} src={provida} width='400px' alt="" />
         </Col>   
         <Col className='d-flex align-items-end justify-content-center mb-5'>
           <Button 
