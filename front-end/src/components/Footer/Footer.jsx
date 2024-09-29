@@ -21,9 +21,9 @@ const Footer = ({logo, phone, email, facebook, instagram, whatsapp}) => {
             <Col xxl={3} md={4} className='p-3'>
             <h6>Links Úteis</h6>
               <Stack gap>
-                <LinkContainer to='/'>
-                  <Link className={styles.footerLink}>Página Oficial</Link>
-                </LinkContainer>
+                  <Link className={styles.footerLink}
+                    to='https://providacirurgica.com.br/'
+                    target='blank'>Página Oficial</Link>
               </Stack>
             </Col>
             <Col xxl={3} md={4} className='p-3'>
