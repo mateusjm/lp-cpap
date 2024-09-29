@@ -96,11 +96,9 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
               Há mais de 22 anos cuidando da sua saúde!
             </h2>
           <Col xl={6} lg={12} md={12} xs={12} className='p-3'>
-            <p className={`text-black mb-3 ${styles.text_justify}`}>A Pró-Vida Cirúrgica é referência em artigos hospitalares, com mais de 22 anos de atuação em Ponte Nova - MG e região, sempre comprometida em atender às suas necessidades levar saúde e bem-estar diretamente até você.</p>
-
-            <p className={`text-black mb-3 ${styles.text_justify}`}>Especializada na venda de aparelhos respiratórios e pulmonares, disponibilizamos uma equipe capacitada para fornecer atendimento técnico completo. Isso inclui assistência técnica contínua, manutenção dos equipamentos e um suporte completo para garantir que seu CPAP funcione da melhor forma, proporcionando uma experiência eficaz e confortável.</p>
-                  
-            <p className={`text-black mb-3 ${styles.text_justify}`}>Nosso compromisso é garantir que você aproveite ao máximo a tecnologia disponível, sem preocupações, com um atendimento personalizado que coloca a sua saúde em primeiro lugar.</p>
+            <p className={`text-black mb-3 ${styles.text_justify}`}>A <span><a target='blank' href="https://www.providacirurgica.com.br">Pró-Vida Cirúrgica</a></span> é referência em <span>artigos hospitalares</span>, com mais de 22 anos de atuação em Ponte Nova - MG e região, sempre comprometida em atender às suas necessidades levar saúde e bem-estar diretamente até você.</p>
+            <p className={`text-black mb-3 ${styles.text_justify}`}>Especializada na venda de <span>aparelhos respiratórios</span> e <span>pulmonares</span>, disponibilizamos uma equipe capacitada para fornecer atendimento técnico completo. Isso inclui assistência técnica contínua, manutenção dos equipamentos e um suporte completo para garantir que seu <span>CPAP</span> funcione da melhor forma, proporcionando uma experiência eficaz e confortável.</p>
+            <p className={`text-black mb-3 ${styles.text_justify}`}>Nosso compromisso é garantir que você aproveite ao máximo a tecnologia disponível, sem preocupações, com um <span>atendimento personalizado</span> que coloca a sua saúde em primeiro lugar.</p>
           </Col>
           <Col xl={6} lg={12} md={12} xs={12} className='d-none d-lg-block text-center mb-5'>
             <img className={`img-fluid ${styles.images}`} src={provida} width='400px' alt=""/>
@@ -111,13 +109,13 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
               style={{
                 width: '60%'
               }}
-              variant='success'>Entrar em Contato</Button>
+              variant='success'><a target='_blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">Entrar em Contato</a></Button>
           </Col>
         </Row>
       </Container>
     </div>
-    <div className='carousel-div'>
-      <Container fluid className='p-4 bg-success'>
+    <div className='reviews-div'>
+      <Container fluid id='reviews' className='p-4'>
         <h2 style={{
           color: '#000'
         }} className='text-center text-light mt-5 mb-3'>Confira nossas avaliações:</h2>
@@ -173,9 +171,9 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
         <Row className={`d-flex align-items-center justify-content-center`}>
           <h1 className='text-center mt-5 mb-4'>Afinal, o que é CPAP?</h1>
           <Col xl={6} lg={12} md={12} xs={12} className='p-3'>
-              <p className={`text-black mb-3 ${styles.text_justify}`}>O CPAP é um dispositivo que mantém as vias aéreas abertas durante o sono, fornecendo um fluxo constante de ar. Isso evita as obstruções que causam a apneia, permitindo que você tenha um sono mais profundo e reparador.</p>  
-              <p className={`text-black mb-3 ${styles.text_justify}`}>Ao usar o CPAP, muitos usuários relatam melhorias significativas em sua energia, concentração e qualidade de vida. Investir em um aparelho CPAP não é apenas uma escolha por um sono melhor; é um passo importante para cuidar da sua saúde a longo prazo. </p> 
-              <p className={`text-black ${styles.text_justify}`}>Se você sofre de apneia do sono, não deixe de considerar essa solução eficaz e nos consulte  para saber mais sobre como o CPAP pode se encaixar na sua rotina.</p>
+              <p className={`text-black mb-3 ${styles.text_justify}`}>O <span>CPAP</span> é um dispositivo que mantém as vias aéreas abertas durante o sono, fornecendo um fluxo constante de ar. Isso evita as obstruções que causam a apneia, permitindo que você tenha um sono mais profundo e reparador.</p>  
+              <p className={`text-black mb-3 ${styles.text_justify}`}>Ao usar o CPAP, muitos usuários relatam <span>melhorias significativas</span> em sua energia, concentração e <span>qualidade de vida</span>. Investir em um aparelho CPAP não é apenas uma escolha por um sono melhor; é um passo importante para cuidar da sua saúde a longo prazo. </p> 
+              <p className={`text-black ${styles.text_justify}`}>Se você sofre de apneia do sono, não deixe de considerar essa <span>solução eficaz</span> e nos consulte  para saber mais sobre como o CPAP pode se encaixar na sua rotina.</p>
           </Col>
           <Col xl={6} lg={12} md={12} xs={12} className='text-center'>
               <img className={`img-fluid ${styles.images}`} src={apneiaPessoas} width='400px' alt="" />
@@ -186,24 +184,69 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
               style={{
                 width: '60%'
               }}
-              variant='outline-success'>Alugar Agora</Button>
+              variant='outline-success'><a target='_blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">Alugar Agora</a></Button>
           </Col>
         </Row>
       </Container>
     </div>
     <div className='apneia-do-sono-div'>
-      <Container fluid
-        className={`d-flex align-items-center bg-success`}
+      <Container
+        className={`d-flex align-items-center h-100 p-4`}
         id='apneia-do-sono'
         >
-        <Row className={`d-flex align-items-center justify-content-center h-100 p-5`}>
-          <Col xl={8} md={8} xs={12}>
-            <h1 className='text-white text-center mb-5'>Apneia do Sono</h1>
-            <p className={`text-black ${styles.text_justify}`}>A apneia do sono é um distúrbio comum, mas muitas vezes subdiagnosticado, que pode impactar seriamente a qualidade de vida. Este problema provoca pausas na respiração durante o sono, resultando em um sono fragmentado e de baixa qualidade. As consequências incluem fadiga diurna, dificuldades de concentração e um aumento do risco de doenças cardiovasculares, hipertensão e diabetes.
-            Tratar a apneia do sono é crucial não apenas para melhorar a qualidade do sono, mas também para promover a saúde geral e o bem-estar. Uma das soluções mais eficazes para este problema é o uso de um aparelho CPAP (pressão positiva contínua nas vias aéreas).</p>
-            <p className={`text-black mb-5 ${styles.text_justify}`}>O CPAP é um dispositivo que mantém as vias aéreas abertas durante o sono, fornecendo um fluxo constante de ar. Isso evita as obstruções que causam a apneia, permitindo que você tenha um sono mais profundo e reparador. Ao usar o CPAP, muitos usuários relatam melhorias significativas em sua energia, concentração e qualidade de vida.
-            Investir em um CPAP não é apenas uma escolha por um sono melhor; é um passo importante para cuidar da sua saúde a longo prazo. Se você sofre de apneia do sono, não deixe de considerar essa solução eficaz e consulte um especialista para saber mais sobre como o CPAP pode se encaixar na sua rotina.</p>
-            <Col className='d-flex align-items-end justify-content-center'><Button className={`${styles.btn_style}`} variant='outline-dark'>Alugue Agora</Button></Col>
+        <Row className={`d-flex align-items-center justify-content-center`}>
+          <h1 className='text-center text-black mt-5 mb-4'>Apneia do Sono</h1>
+          <Col xl={6} lg={12} md={12} xs={12} className='p-3'>
+              <p className={`text-white mb-3 ${styles.text_justify}`}>A apneia do sono é um distúrbio comum, mas muitas vezes subdiagnosticado, que pode impactar seriamente a qualidade de vida. Este problema provoca pausas na respiração durante o sono, resultando em um sono fragmentado e de baixa qualidade.</p> 
+              <p className={`text-white mb-3 ${styles.text_justify}`}>As consequências incluem fadiga diurna, dificuldades de concentração e um aumento do risco de doenças cardiovasculares, hipertensão e diabetes.</p>
+              <p className={`text-white mb-3 ${styles.text_justify}`}>Tratar a apneia do sono é crucial não apenas para melhorar a qualidade do sono, mas também para promover a saúde geral e o bem-estar. Uma das soluções mais eficazes para este problema é o uso de um aparelho CPAP (pressão positiva contínua nas vias aéreas)</p>
+          </Col>
+          <Col xl={6} lg={12} md={12} xs={12} className='text-center'>
+              <img className={`img-fluid ${styles.images}`} src={apneiaPessoas} width='400px' alt="" />
+          </Col>
+          <Col className='d-flex align-items-end justify-content-center mb-5'>
+            <Button
+              className={`${styles.btn_style}`}
+              style={{
+                width: '60%'
+              }}
+              variant='light'><a target='_blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">Comprar Agora</a></Button>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+    <div className='faq-div'>
+      <Container
+        className={`d-flex align-items-center h-100 p-4`}
+        id='faq'
+        >
+        <Row className={`d-flex align-items-center justify-content-center`}>
+          <h1 className='text-center mt-5 mb-4'>Perguntas frequentes</h1>
+          <Col xl={9} lg={12} md={12} xs={12} className='p-3'>
+              <ul>
+                <h2>O CPAP faz barulho? Ele atrapalha o sono?</h2>
+                  <li>
+                    <p className={`text-black mb-4 ${styles.text_justify}`}>Os modelos mais modernos de CPAP são bastante silenciosos, com níveis de ruído baixos, e geralmente não interferem no sono.</p>
+                  </li>
+                <h2>Quanto tempo devo usar o CPAP por noite?</h2>
+                  <li>
+                    <p className={`text-black mb-4 ${styles.text_justify}`}>As consequências incluem fadiga diurna, dificuldades de concentração e um aumento do risco de doenças cardiovasculares, hipertensão e diabetes.</p>
+                  </li>
+                <h2>O CPAP cura a apneia do sono?</h2>
+                  <li>
+                    <p className={`text-black mb-4 ${styles.text_justify}`}>O CPAP não cura a apneia do sono, mas é um tratamento eficaz que ajuda a controlar os sintomas. O uso contínuo melhora a qualidade de vida e reduz os riscos associados ao distúrbio.
+                    </p>
+                  </li>
+                <h2>Posso parar de usar o CPAP se me sentir melhor?</h2>
+                  <li>
+                    <p className={`text-black mb-4 ${styles.text_justify}`}>Não. Mesmo que os sintomas melhorem, é importante continuar o uso do CPAP, pois ele é um tratamento contínuo para manter as vias aéreas abertas durante o sono.</p>
+                  </li>
+                <h2>O que causa a apneia do sono?</h2>
+                  <li>
+                    <p className={`text-black mb-4 ${styles.text_justify}`}>A principal causa é o bloqueio parcial ou total das vias aéreas durante o sono. Fatores como obesidade, anatomia da garganta, idade avançada e histórico familiar também podem influenciar.
+                    </p>
+                  </li>
+              </ul>
           </Col>
         </Row>
       </Container>

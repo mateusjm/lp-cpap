@@ -48,7 +48,7 @@ const Header = ({ logo }) => {
               Apneia do Sono
             </Nav.Link>
             <Nav.Link 
-              onClick={() => scrollToElement('apneia-do-sono')} 
+              onClick={() => scrollToElement('faq')} 
               className={`me-3 ${styles.active_link}`}
             >
               FAQ
@@ -57,9 +57,9 @@ const Header = ({ logo }) => {
               variant='outline-success' 
               onClick={() => scrollToElement('contato')} 
               style={{ cursor: 'pointer', fontWeight: 500 }}
-              className='ms-auto'
+              className={`ms-auto ${styles.btn_style}`}
             >
-              Entrar em Contato
+              <a target='_blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">Entrar em Contato</a>
             </Button>
           </Nav>
         </Navbar.Collapse>
