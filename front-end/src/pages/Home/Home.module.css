@@ -46,6 +46,10 @@ h2 {
   .images {
     width: 80%;
   }
+
+  .btn_style {
+    font-size: 20px;
+  }
 }
 
 
