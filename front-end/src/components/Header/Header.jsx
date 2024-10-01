@@ -20,7 +20,7 @@ const Header = ({ logo }) => {
 
   return (
     <Navbar bg='light' expand='lg'>
-      <Container>
+      <Container id='nav'>
         <Navbar.Brand onClick={() => scrollToElement('home')} style={{ cursor: 'pointer' }}>
           <img src={logo} alt="Pró-Vida Cirúrgica" width={150} />
         </Navbar.Brand>

@@ -2,11 +2,12 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import { Carousel } from 'react-bootstrap'
+import {  NavLink } from 'react-router-dom';
 
 // CSS
 import styles from '../Home/Home.module.css'
 
-const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provida, avaliacao1, avaliacao2, avaliacao3, avaliacao4, avaliacao5, avaliacao6, avaliacao7, avaliacao8, avaliacao9, apneiaPessoas}) => {
+const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provida, avaliacao1, avaliacao2, avaliacao3, avaliacao4, avaliacao5, avaliacao6, avaliacao7, avaliacao8, avaliacao9, apneiaPessoas, cpapGaslive}) => {
 
   const [telaMenor, setTelaMenor] = useState(false);
 
@@ -24,7 +25,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
   return (
     <>
     <div className='carousel-div'>
-      <Carousel indicators={false}>
+      <Carousel indicators={false} id='carousel'>
         <Carousel.Item interval={3000}>
           <a target='blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">
               {telaMenor ? (
@@ -104,12 +105,11 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
             <img className={`img-fluid ${styles.images}`} src={provida} width='400px' alt=""/>
           </Col>
           <Col className='d-flex align-items-end justify-content-center mb-5'>
-            <Button
-              className={`${styles.btn_style}`}
-              style={{
-                width: '60%'
-              }}
-              variant='success'><a target='_blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">Entrar em Contato</a></Button>
+            <NavLink className='wpp' target='_blank' to='https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0'>
+              <Button
+                className={`${styles.btn_style}`}
+                variant='success'>Entrar em Contato</Button>
+            </NavLink>
           </Col>
         </Row>
       </Container>
@@ -175,16 +175,15 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
               <p className={`text-black mb-3 ${styles.text_justify}`}>Ao usar o CPAP, muitos usuários relatam <span>melhorias significativas</span> em sua energia, concentração e <span>qualidade de vida</span>. Investir em um aparelho CPAP não é apenas uma escolha por um sono melhor; é um passo importante para cuidar da sua saúde a longo prazo. </p> 
               <p className={`text-black ${styles.text_justify}`}>Se você sofre de apneia do sono, não deixe de considerar essa <span>solução eficaz</span> e nos consulte  para saber mais sobre como o CPAP pode se encaixar na sua rotina.</p>
           </Col>
-          <Col xl={6} lg={12} md={12} xs={12} className='text-center'>
-              <img className={`img-fluid ${styles.images}`} src={apneiaPessoas} width='400px' alt="" />
+          <Col xl={6} lg={12} md={12} xs={12} className='text-center mb-3'>
+              <img className={`img-fluid ${styles.images}`} src={cpapGaslive} alt="" />
           </Col>
           <Col className='d-flex align-items-end justify-content-center mb-5'>
-            <Button
-              className={`${styles.btn_style}`}
-              style={{
-                width: '60%'
-              }}
-              variant='outline-success'><a target='_blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">Alugar Agora</a></Button>
+            <NavLink className='wpp' target='_blank' to='https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0'>
+              <Button
+                className={`${styles.btn_style}`}
+                variant='success'>Alugar Agora</Button>
+            </NavLink>
           </Col>
         </Row>
       </Container>
@@ -195,22 +194,21 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
         id='apneia-do-sono'
         >
         <Row className={`d-flex align-items-center justify-content-center`}>
-          <h1 className='text-center text-black mt-5 mb-4'>Apneia do Sono</h1>
+          <h1 className='text-center text-light mt-5 mb-4'>Apneia do Sono</h1>
           <Col xl={6} lg={12} md={12} xs={12} className='p-3'>
-              <p className={`text-white mb-3 ${styles.text_justify}`}>A apneia do sono é um distúrbio comum, mas muitas vezes subdiagnosticado, que pode impactar seriamente a qualidade de vida. Este problema provoca pausas na respiração durante o sono, resultando em um sono fragmentado e de baixa qualidade.</p> 
-              <p className={`text-white mb-3 ${styles.text_justify}`}>As consequências incluem fadiga diurna, dificuldades de concentração e um aumento do risco de doenças cardiovasculares, hipertensão e diabetes.</p>
-              <p className={`text-white mb-3 ${styles.text_justify}`}>Tratar a apneia do sono é crucial não apenas para melhorar a qualidade do sono, mas também para promover a saúde geral e o bem-estar. Uma das soluções mais eficazes para este problema é o uso de um aparelho CPAP (pressão positiva contínua nas vias aéreas)</p>
+              <p className={`text-black mb-3 ${styles.text_justify}`}>A <span className='text-light'>apneia do sono</span> é um distúrbio comum, mas muitas vezes subdiagnosticado, que pode impactar seriamente a <span className='text-white'>qualidade de vida</span>. Este problema provoca pausas na respiração durante o sono, resultando em um sono fragmentado e de baixa qualidade.</p> 
+              <p className={`text-black mb-3 ${styles.text_justify}`}>As consequências incluem <span className='text-white'>fadiga diurna</span>, dificuldades de concentração e um aumento do risco de doenças cardiovasculares, <span className='text-white'>hipertensão</span> e <span className='text-white'>diabetes</span>.</p>
+              <p className={`text-black mb-3 ${styles.text_justify}`}>Tratar a apneia do sono é crucial não apenas para melhorar a qualidade do sono, mas também para promover a saúde geral e o bem-estar. Uma das soluções mais eficazes para este problema é o uso de um <span className='text-white'>aparelho CPAP</span> (pressão positiva contínua nas vias aéreas)</p>
           </Col>
           <Col xl={6} lg={12} md={12} xs={12} className='text-center'>
               <img className={`img-fluid ${styles.images}`} src={apneiaPessoas} width='400px' alt="" />
           </Col>
           <Col className='d-flex align-items-end justify-content-center mb-5'>
-            <Button
-              className={`${styles.btn_style}`}
-              style={{
-                width: '60%'
-              }}
-              variant='light'><a target='_blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">Comprar Agora</a></Button>
+            <NavLink className='wpp' target='_blank' to='https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0'>
+              <Button
+                className={`${styles.btn_style}`}
+                variant='light'>Comprar agora</Button>
+            </NavLink>
           </Col>
         </Row>
       </Container>
@@ -221,27 +219,37 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
         id='faq'
         >
         <Row className={`d-flex align-items-center justify-content-center`}>
-          <h1 className='text-center mt-5 mb-4'>Perguntas frequentes</h1>
+          <h1 className='text-center text-black mt-5 mb-4'>Perguntas frequentes</h1>
           <Col xl={9} lg={12} md={12} xs={12} className='p-3'>
-              <ul>
-                <h2>O CPAP faz barulho? Ele atrapalha o sono?</h2>
+              <ul className='questions'>
+                <h2 style={{
+                  color: '#00bf63'
+                }}>O CPAP faz barulho? Ele atrapalha o sono?</h2>
                   <li>
                     <p className={`text-black mb-4 ${styles.text_justify}`}>Os modelos mais modernos de CPAP são bastante silenciosos, com níveis de ruído baixos, e geralmente não interferem no sono.</p>
                   </li>
-                <h2>Quanto tempo devo usar o CPAP por noite?</h2>
+                  <h2 style={{
+                  color: '#00bf63'
+                }}>Quanto tempo devo usar o CPAP por noite?</h2>
                   <li>
                     <p className={`text-black mb-4 ${styles.text_justify}`}>As consequências incluem fadiga diurna, dificuldades de concentração e um aumento do risco de doenças cardiovasculares, hipertensão e diabetes.</p>
                   </li>
-                <h2>O CPAP cura a apneia do sono?</h2>
+                  <h2 style={{
+                  color: '#00bf63'
+                }}>O CPAP cura a apneia do sono?</h2>
                   <li>
                     <p className={`text-black mb-4 ${styles.text_justify}`}>O CPAP não cura a apneia do sono, mas é um tratamento eficaz que ajuda a controlar os sintomas. O uso contínuo melhora a qualidade de vida e reduz os riscos associados ao distúrbio.
                     </p>
                   </li>
-                <h2>Posso parar de usar o CPAP se me sentir melhor?</h2>
+                  <h2 style={{
+                  color: '#00bf63'
+                }}>Posso parar de usar o CPAP se me sentir melhor?</h2>
                   <li>
                     <p className={`text-black mb-4 ${styles.text_justify}`}>Não. Mesmo que os sintomas melhorem, é importante continuar o uso do CPAP, pois ele é um tratamento contínuo para manter as vias aéreas abertas durante o sono.</p>
                   </li>
-                <h2>O que causa a apneia do sono?</h2>
+                  <h2 style={{
+                  color: '#00bf63'
+                }}>O que causa a apneia do sono?</h2>
                   <li>
                     <p className={`text-black mb-4 ${styles.text_justify}`}>A principal causa é o bloqueio parcial ou total das vias aéreas durante o sono. Fatores como obesidade, anatomia da garganta, idade avançada e histórico familiar também podem influenciar.
                     </p>
