@@ -91,14 +91,14 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
         >
         <Row className={`d-flex align-items-start justify-content-center`}>
             <h1 className={`text-center mt-5 mb-4`}>
-              Pró-Vida Cirúrgica:
+              Pró-Vida Cirúrgica
             </h1>
             <h2 className='text-black text-center mb-5'>
               Há mais de 22 anos cuidando da sua saúde!
             </h2>
           <Col xl={6} lg={12} md={12} xs={12} className='p-3'>
-            <p className={`text-black mb-3 ${styles.text_justify}`}>A <span><a target='blank' href="https://www.providacirurgica.com.br">Pró-Vida Cirúrgica</a></span> é referência em <span>artigos hospitalares</span>, com mais de 22 anos de atuação em Ponte Nova - MG e região, sempre comprometida em atender às suas necessidades levar saúde e bem-estar diretamente até você.</p>
-            <p className={`text-black mb-3 ${styles.text_justify}`}>Especializada na venda de <span>aparelhos respiratórios</span> e <span>pulmonares</span>, disponibilizamos uma equipe capacitada para fornecer atendimento técnico completo. Isso inclui assistência técnica contínua, manutenção dos equipamentos e um suporte completo para garantir que seu <span>CPAP</span> funcione da melhor forma, proporcionando uma experiência eficaz e confortável.</p>
+            <p className={`text-black mb-3 ${styles.text_justify}`}>A <span><a target='blank' href="https://www.providacirurgica.com.br">Pró-Vida Cirúrgica</a></span> é referência em <span>artigos hospitalares</span> e <span>ortopédicos</span>, com mais de 22 anos de atuação em Ponte Nova - MG e região, sempre comprometida em atender às suas necessidades levar saúde e bem-estar diretamente até você.</p>
+            <p className={`text-black mb-3 ${styles.text_justify}`}>Especializada na venda de <span>aparelhos respiratórios</span> e <span>pulmonares</span>, disponibilizamos uma equipe capacitada para fornecer um atendimento completo garantindo que seu <span>CPAP</span> funcione da melhor forma, proporcionando uma experiência eficaz e confortável.</p>
             <p className={`text-black mb-3 ${styles.text_justify}`}>Nosso compromisso é garantir que você aproveite ao máximo a tecnologia disponível, sem preocupações, com um <span>atendimento personalizado</span> que coloca a sua saúde em primeiro lugar.</p>
           </Col>
           <Col xl={6} lg={12} md={12} xs={12} className='d-none d-lg-block text-center mb-5'>
@@ -224,15 +224,16 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
               <ul className='questions'>
                 <h2 style={{
                   color: '#00bf63'
-                }}>O CPAP faz barulho? Ele atrapalha o sono?</h2>
+                }}>Como identificar a apneia do sono?</h2>
                   <li>
-                    <p className={`text-black mb-4 ${styles.text_justify}`}>Os modelos mais modernos de CPAP são bastante silenciosos, com níveis de ruído baixos, e geralmente não interferem no sono.</p>
+                    <p className={`text-black mb-4 ${styles.text_justify}`}>Presença de roncos altos e frequentes, pausas na respiração durante o sono, ou se acorda com sensação de sufocamento. Outros sintomas incluem sonolência excessiva durante o dia, dores de cabeça ao despertar e dificuldade de concentração. Caso você apresente esses sintomas, é hora de procurar orientação médica.</p>
                   </li>
                   <h2 style={{
                   color: '#00bf63'
-                }}>Quanto tempo devo usar o CPAP por noite?</h2>
+                }}>O que causa a apneia do sono?</h2>
                   <li>
-                    <p className={`text-black mb-4 ${styles.text_justify}`}>As consequências incluem fadiga diurna, dificuldades de concentração e um aumento do risco de doenças cardiovasculares, hipertensão e diabetes.</p>
+                    <p className={`text-black mb-4 ${styles.text_justify}`}>A principal causa é o bloqueio parcial ou total das vias aéreas durante o sono. Fatores como obesidade, anatomia da garganta, idade avançada e histórico familiar também podem influenciar.
+                    </p>
                   </li>
                   <h2 style={{
                   color: '#00bf63'
@@ -245,14 +246,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
                   color: '#00bf63'
                 }}>Posso parar de usar o CPAP se me sentir melhor?</h2>
                   <li>
-                    <p className={`text-black mb-4 ${styles.text_justify}`}>Não. Mesmo que os sintomas melhorem, é importante continuar o uso do CPAP, pois ele é um tratamento contínuo para manter as vias aéreas abertas durante o sono.</p>
-                  </li>
-                  <h2 style={{
-                  color: '#00bf63'
-                }}>O que causa a apneia do sono?</h2>
-                  <li>
-                    <p className={`text-black mb-4 ${styles.text_justify}`}>A principal causa é o bloqueio parcial ou total das vias aéreas durante o sono. Fatores como obesidade, anatomia da garganta, idade avançada e histórico familiar também podem influenciar.
-                    </p>
+                    <p className={`text-black mb-4 ${styles.text_justify}`}>Mesmo que os sintomas melhorem, é importante continuar o uso do CPAP, pois ele é um tratamento contínuo para manter as vias aéreas abertas durante o sono.</p>
                   </li>
               </ul>
           </Col>
