@@ -22,7 +22,7 @@ const Header = ({ logo }) => {
     <Navbar bg='light' expand='lg'>
       <Container id='nav'>
         <Navbar.Brand onClick={() => scrollToElement('home')} style={{ cursor: 'pointer' }}>
-          <img src={logo} alt="Pró-Vida Cirúrgica" width={150} />
+          <img src={logo} alt="Logo da Pró-Vida Cirúrgica" width={150} />
         </Navbar.Brand>
         <Navbar.Toggle 
           onClick={toggleMenu} 

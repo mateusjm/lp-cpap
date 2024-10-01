@@ -32,7 +32,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
                 <img
                   className="d-block w-100 image-carousel-1"
                   src={banner1sm}
-                  alt="Banner pequeno"
+                  alt="Venda de CPAP"
                   style={{
                     cursor: 'pointer'
                   }}
@@ -41,7 +41,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
                 <img
                   className="d-block w-100"
                   src={banner1}
-                  alt="Banner grande"
+                  alt="Venda de CPAP"
                 />
               )}
           </a>
@@ -51,7 +51,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
             <img
               className="d-block w-100 image-carousel-2"
               src={banner2sm}
-              alt="Banner pequeno"
+              alt="Localização da Pró-Vida Cirúrgica"
               style={{
                 cursor: 'pointer'
               }}
@@ -60,7 +60,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
             <img
               className="d-block w-100"
               src={banner2}
-              alt="Banner grande"
+              alt="Localização da Pró-Vida Cirúrgica"
             />
           )}
         </Carousel.Item>
@@ -69,7 +69,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
             <img
               className="d-block w-100 image-carousel-3"
               src={banner3sm}
-              alt="Banner pequeno"
+              alt="CPAPS de última geração"
               style={{
                 cursor: 'pointer'
               }}
@@ -78,7 +78,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
             <img
               className="d-block w-100"
               src={banner3}
-              alt="Banner grande"
+              alt="CPAPS de última geração"
             />
           )}
         </Carousel.Item>
@@ -102,10 +102,10 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
             <p className={`text-black mb-3 ${styles.text_justify}`}>Nosso compromisso é garantir que você aproveite ao máximo a tecnologia disponível, sem preocupações, com um <span>atendimento personalizado</span> que coloca a sua saúde em primeiro lugar.</p>
           </Col>
           <Col xl={6} lg={12} md={12} xs={12} className='d-none d-lg-block text-center mb-5'>
-            <img className={`img-fluid ${styles.images}`} src={provida} width='400px' alt=""/>
+            <img className={`img-fluid ${styles.images}`} src={provida} width='400px' alt="Pró-Vida Cirúrgica"/>
           </Col>
           <Col className='d-flex align-items-end justify-content-center mb-5'>
-            <NavLink className='wpp' target='_blank' to='https://wa.me/message/K7V37SCXJ72KG1"'>
+            <NavLink className='wpp' target='_blank' to='https://wa.me/message/K7V37SCXJ72KG1'>
               <Button
                 className={`${styles.btn_style}`}
                 variant='success'>Entrar em Contato</Button>
@@ -124,39 +124,39 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
            <Carousel.Item interval={3000}>
               <Row className='align-items-center text-center justify-content-around '>
                 <Col xs={12} md={4} lg={4}>
-                  <img className='img-fluid m-3 reviews' src={avaliacao1} alt="" />
+                  <img className='img-fluid m-3 reviews' src={avaliacao1} alt="Avaliações Google da Pró-Vida Cirúrgica" />
                 </Col>
                 <Col className='d-none d-md-block' xs={12} md={4} lg={4}>
-                  <img className='img-fluid m-3 reviews' src={avaliacao2} alt="" />
+                  <img className='img-fluid m-3 reviews' src={avaliacao2} alt="Avaliações Google da Pró-Vida Cirúrgica" />
                 </Col>
                 <Col className='d-none d-md-block' xs={12} md={4} lg={4}>
-                  <img className='img-fluid m-3 reviews' src={avaliacao3} alt="" />
+                  <img className='img-fluid m-3 reviews' src={avaliacao3} alt="Avaliações Google da Pró-Vida Cirúrgica" />
                 </Col>
               </Row>
            </Carousel.Item>
            <Carousel.Item interval={3000}>
               <Row className='align-items-center text-center justify-content-around'>
                 <Col xs={12} md={4} lg={4}>
-                  <img className='img-fluid m-3 reviews' src={avaliacao4} alt="" />
+                  <img className='img-fluid m-3 reviews' src={avaliacao4} alt="Avaliações Google da Pró-Vida Cirúrgica" />
                 </Col>
                 <Col className='d-none d-md-block' xs={12} md={4} lg={4}>
-                  <img className='img-fluid m-3 reviews' src={avaliacao5} alt="" />
+                  <img className='img-fluid m-3 reviews' src={avaliacao5} alt="Avaliações Google da Pró-Vida Cirúrgica" />
                 </Col>
                 <Col className='d-none d-md-block' xs={12} md={4} lg={4}>
-                  <img className='img-fluid m-3 reviews' src={avaliacao6} alt="" />
+                  <img className='img-fluid m-3 reviews' src={avaliacao6} alt="Avaliações Google da Pró-Vida Cirúrgica" />
                 </Col>
               </Row>
            </Carousel.Item>
            <Carousel.Item interval={3000}>
               <Row className='align-items-center text-center justify-content-around '>
                 <Col xs={12} md={4} lg={4}>
-                  <img className='img-fluid m-3 reviews' src={avaliacao7} alt="" />
+                  <img className='img-fluid m-3 reviews' src={avaliacao7} alt="Avaliações Google da Pró-Vida Cirúrgica" />
                 </Col>
                 <Col className='d-none d-md-block' xs={12} md={4} lg={4}>
-                  <img className='img-fluid m-3 reviews' src={avaliacao8} alt="" />
+                  <img className='img-fluid m-3 reviews' src={avaliacao8} alt="Avaliações Google da Pró-Vida Cirúrgica" />
                 </Col>
                 <Col className='d-none d-md-block' xs={12} md={4} lg={4}>
-                  <img className='img-fluid m-3 reviews' src={avaliacao9} alt="" />
+                  <img className='img-fluid m-3 reviews' src={avaliacao9} alt="Avaliações Google da Pró-Vida Cirúrgica" />
                 </Col>
               </Row>
            </Carousel.Item>
@@ -176,10 +176,10 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
               <p className={`text-black ${styles.text_justify}`}>Se você sofre de apneia do sono, não deixe de considerar essa <span>solução eficaz</span> e nos consulte  para saber mais sobre como o CPAP pode se encaixar na sua rotina.</p>
           </Col>
           <Col xl={6} lg={12} md={12} xs={12} className='text-center mb-3'>
-              <img className={`img-fluid ${styles.images}`} src={cpapGaslive} alt="" />
+              <img className={`img-fluid ${styles.images}`} src={cpapGaslive} alt="CPAP Gaslive" />
           </Col>
           <Col className='d-flex align-items-end justify-content-center mb-5'>
-            <NavLink className='wpp' target='_blank' to='https://wa.me/message/K7V37SCXJ72KG1"'>
+            <NavLink className='wpp' target='_blank' to='https://wa.me/message/K7V37SCXJ72KG1'>
               <Button
                 className={`${styles.btn_style}`}
                 variant='success'>Alugar Agora</Button>
@@ -201,10 +201,10 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
               <p className={`text-black mb-3 ${styles.text_justify}`}>Tratar a apneia do sono é crucial não apenas para melhorar a qualidade do sono, mas também para promover a saúde geral e o bem-estar. Uma das soluções mais eficazes para este problema é o uso de um <span className='text-white'>aparelho CPAP</span> (pressão positiva contínua nas vias aéreas)</p>
           </Col>
           <Col xl={6} lg={12} md={12} xs={12} className='text-center'>
-              <img className={`img-fluid ${styles.images}`} src={apneiaPessoas} width='400px' alt="" />
+              <img className={`img-fluid ${styles.images}`} src={apneiaPessoas} width='400px' alt="Apneia do Sono" />
           </Col>
           <Col className='d-flex align-items-end justify-content-center mb-5'>
-            <NavLink className='wpp' target='_blank' to='https://wa.me/message/K7V37SCXJ72KG1"'>
+            <NavLink className='wpp' target='_blank' to='https://wa.me/message/K7V37SCXJ72KG1'>
               <Button
                 className={`${styles.btn_style}`}
                 variant='light'>Comprar agora</Button>
