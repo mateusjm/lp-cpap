@@ -10,20 +10,28 @@ import { LinkContainer } from 'react-router-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Footer = ({logo, phone, email, facebook, instagram, whatsapp}) => {
+
+  const scrollToElement = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
       <Container fluid expand='xxl' className={`footer-fixed p-3 bg-dark text-white ${styles.height_custom}`}>
           <Row className='mt-5 mb-5 p-3'>
             <Col xxl={3} className='text-center'>
-                <Link to='/'>
+                <Link onClick={() => scrollToElement('nav')}>
                   <img width={200} src={logo} alt="Logo da Pró-Vida" />
                 </Link>
             </Col>
             <Col xxl={3} md={4} className='p-3'>
             <h6>Links Úteis</h6>
               <Stack gap>
-                <LinkContainer to='/'>
-                  <Link className={styles.footerLink}>Página Oficial</Link>
-                </LinkContainer>
+                  <Link className={styles.footerLink}
+                    to='https://providacirurgica.com.br/'
+                    target='blank'>Página Oficial</Link>
               </Stack>
             </Col>
             <Col xxl={3} md={4} className='p-3'>

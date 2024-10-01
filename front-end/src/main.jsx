@@ -23,6 +23,7 @@ import banner2sm from './assets/banner2-sm.png'
 import banner3sm from './assets/banner3-sm.png'
 import provida from './assets/pro-vida.png'
 import apneiaPessoas from './assets/apneia-pessoas.png'
+import cpapGaslive from './assets/cpap-gaslive.jpg'
 
 // reviews
 import avaliacao1 from './assets/avaliacao-1.png'
@@ -62,6 +63,7 @@ const router = createBrowserRouter([
           avaliacao8={avaliacao8}
           avaliacao9={avaliacao9}
           apneiaPessoas={apneiaPessoas}
+          cpapGaslive={cpapGaslive}
         />,
       },
     ],
