@@ -246,7 +246,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
                   color: '#00bf63'
                 }}>Posso parar de usar o CPAP se me sentir melhor?</h2>
                   <li>
-                    <p className={`text-black mb-4 ${styles.text_justify}`}>Mesmo que os sintomas melhorem, é importante continuar o uso do CPAP, pois ele é um tratamento contínuo para manter as vias aéreas abertas durante o sono.</p>
+                    <p className={`text-black mb-5 ${styles.text_justify}`}>Mesmo que os sintomas melhorem, é importante continuar o uso do CPAP, pois ele é um tratamento contínuo para manter as vias aéreas abertas durante o sono.</p>
                   </li>
               </ul>
           </Col>
