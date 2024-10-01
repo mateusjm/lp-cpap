@@ -59,7 +59,7 @@ const Header = ({ logo }) => {
               style={{ cursor: 'pointer', fontWeight: 500 }}
               className={`ms-auto ${styles.btn_style}`}
             >
-              <a target='_blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">Entrar em Contato</a>
+              <a target='_blank' href="https://wa.me/message/K7V37SCXJ72KG1">Entrar em Contato</a>
             </Button>
           </Nav>
         </Navbar.Collapse>

@@ -20,7 +20,7 @@ import whatsapp from './assets/whatsapp.png'
 function App() {
   return (
     <>
-       <a href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0" target="_blank" className="whatsapp-float" rel="noopener noreferrer">
+       <a href="https://wa.me/message/K7V37SCXJ72KG1" target="_blank" className="whatsapp-float" rel="noopener noreferrer">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" />
       </a>
       <Header logo={logo}/>

@@ -27,7 +27,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
     <div className='carousel-div'>
       <Carousel indicators={false} id='carousel'>
         <Carousel.Item interval={3000}>
-          <a target='blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">
+          <a target='blank' href="https://wa.me/message/K7V37SCXJ72KG1">
               {telaMenor ? (
                 <img
                   className="d-block w-100 image-carousel-1"
@@ -105,7 +105,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
             <img className={`img-fluid ${styles.images}`} src={provida} width='400px' alt=""/>
           </Col>
           <Col className='d-flex align-items-end justify-content-center mb-5'>
-            <NavLink className='wpp' target='_blank' to='https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0'>
+            <NavLink className='wpp' target='_blank' to='https://wa.me/message/K7V37SCXJ72KG1"'>
               <Button
                 className={`${styles.btn_style}`}
                 variant='success'>Entrar em Contato</Button>
@@ -179,7 +179,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
               <img className={`img-fluid ${styles.images}`} src={cpapGaslive} alt="" />
           </Col>
           <Col className='d-flex align-items-end justify-content-center mb-5'>
-            <NavLink className='wpp' target='_blank' to='https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0'>
+            <NavLink className='wpp' target='_blank' to='https://wa.me/message/K7V37SCXJ72KG1"'>
               <Button
                 className={`${styles.btn_style}`}
                 variant='success'>Alugar Agora</Button>
@@ -204,7 +204,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
               <img className={`img-fluid ${styles.images}`} src={apneiaPessoas} width='400px' alt="" />
           </Col>
           <Col className='d-flex align-items-end justify-content-center mb-5'>
-            <NavLink className='wpp' target='_blank' to='https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0'>
+            <NavLink className='wpp' target='_blank' to='https://wa.me/message/K7V37SCXJ72KG1"'>
               <Button
                 className={`${styles.btn_style}`}
                 variant='light'>Comprar agora</Button>
