@@ -7,7 +7,7 @@ import {  NavLink } from 'react-router-dom';
 // CSS
 import styles from '../Home/Home.module.css'
 
-const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provida, avaliacao1, avaliacao2, avaliacao3, avaliacao4, avaliacao5, avaliacao6, avaliacao7, avaliacao8, avaliacao9, apneiaPessoas, cpapGaslive}) => {
+const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, avaliacao1, avaliacao2, avaliacao3, avaliacao4, avaliacao5, avaliacao6, avaliacao7, avaliacao8, avaliacao9, apneiaPessoas, cpapGaslive, lojaProvida}) => {
 
   const [telaMenor, setTelaMenor] = useState(false);
 
@@ -89,7 +89,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
         className={`d-flex align-items-center bg-white h-100 p-4`}
         id='home'
         >
-        <Row className={`d-flex align-items-start justify-content-center`}>
+        <Row className={`d-flex align-items-center justify-content-center`}>
             <h1 className={`text-center mt-5 mb-4`}>
               Pró-Vida Cirúrgica
             </h1>
@@ -101,8 +101,8 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
             <p className={`text-black mb-3 ${styles.text_justify}`}>Especializada na venda de <span>aparelhos respiratórios</span> e <span>pulmonares</span>, disponibilizamos uma equipe capacitada para fornecer um atendimento completo garantindo que seu <span>CPAP</span> funcione da melhor forma, proporcionando uma experiência eficaz e confortável.</p>
             <p className={`text-black mb-3 ${styles.text_justify}`}>Nosso compromisso é garantir que você aproveite ao máximo a tecnologia disponível, sem preocupações, com um <span>atendimento personalizado</span> que coloca a sua saúde em primeiro lugar.</p>
           </Col>
-          <Col xl={6} lg={12} md={12} xs={12} className='d-none d-lg-block text-center mb-5'>
-            <img className={`img-fluid ${styles.images}`} src={provida} width='400px' alt="Pró-Vida Cirúrgica"/>
+          <Col xl={6} lg={12} md={12} xs={12} className='d-none d-md-block text-center mb-5'>
+            <img className={`img-fluid ${styles.images}`} src={lojaProvida} alt="Pró-Vida Cirúrgica"/>
           </Col>
           <Col className='d-flex align-items-end justify-content-center mb-5'>
             <NavLink className='wpp' target='_blank' to='https://wa.me/message/K7V37SCXJ72KG1'>
@@ -201,7 +201,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provi
               <p className={`text-black mb-3 ${styles.text_justify}`}>Tratar a apneia do sono é crucial não apenas para melhorar a qualidade do sono, mas também para promover a saúde geral e o bem-estar. Uma das soluções mais eficazes para este problema é o uso de um <span className='text-white'>aparelho CPAP</span> (pressão positiva contínua nas vias aéreas)</p>
           </Col>
           <Col xl={6} lg={12} md={12} xs={12} className='text-center'>
-              <img className={`img-fluid ${styles.images}`} src={apneiaPessoas} width='400px' alt="Apneia do Sono" />
+              <img className={`img-fluid ${styles.images}`} src={apneiaPessoas} alt="Apneia do Sono" />
           </Col>
           <Col className='d-flex align-items-end justify-content-center mb-5'>
             <NavLink className='wpp' target='_blank' to='https://wa.me/message/K7V37SCXJ72KG1'>

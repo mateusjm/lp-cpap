@@ -21,7 +21,7 @@ import banner3 from './assets/banner3.png'
 import banner1sm from './assets/banner1-sm.png'
 import banner2sm from './assets/banner2-sm.png'
 import banner3sm from './assets/banner3-sm.png'
-import provida from './assets/pro-vida.png'
+import lojaProvida from './assets/loja-pro-vida.png'
 import apneiaPessoas from './assets/apneia-pessoas.png'
 import cpapGaslive from './assets/cpap-gaslive.jpg'
 
@@ -52,7 +52,6 @@ const router = createBrowserRouter([
           banner1sm={banner1sm}
           banner2sm={banner2sm}
           banner3sm={banner3sm}
-          provida={provida}
           avaliacao1={avaliacao1}
           avaliacao2={avaliacao2}
           avaliacao3={avaliacao3}
@@ -64,6 +63,7 @@ const router = createBrowserRouter([
           avaliacao9={avaliacao9}
           apneiaPessoas={apneiaPessoas}
           cpapGaslive={cpapGaslive}
+          lojaProvida={lojaProvida}
         />,
       },
     ],
