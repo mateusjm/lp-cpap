@@ -7,9 +7,6 @@ import { Outlet } from 'react-router-dom'
 import Header from '../src/components/Header/Header'
 import Footer from '../src/components/Footer/Footer'
 
-// hooks
-import ScrollToSection from '../src/hooks/ScrollToSection/ScrollToSection'
-
 // images
 import logo from './assets/logo-pro-vida.png'
 
@@ -26,7 +23,6 @@ function App() {
        <a href="https://wa.me/message/K7V37SCXJ72KG1" target="_blank" className="whatsapp-float" rel="noopener noreferrer">
         <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/WhatsApp_icon.png" alt="WhatsApp" />
       </a>
-      <ScrollToSection/>
       <Header logo={logo}/>
       <Outlet/>
       <Footer 

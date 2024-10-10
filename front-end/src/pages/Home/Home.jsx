@@ -1,14 +1,31 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect} from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import { Carousel } from 'react-bootstrap'
-import {  NavLink } from 'react-router-dom';
+import {  NavLink, useLocation } from 'react-router-dom';
 
 // CSS
 import styles from '../Home/Home.module.css'
 
 const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, avaliacao1, avaliacao2, avaliacao3, avaliacao4, avaliacao5, avaliacao6, avaliacao7, avaliacao8, avaliacao9, apneiaPessoas, cpapGaslive, lojaProvida}) => {
 
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.substring(1);
+      const element = document.getElementById(id);
+  
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth" });
+        }, 700);
+      }
+    }
+  }, [location]);
+  
+
+  // image
   const [telaMenor, setTelaMenor] = useState(false);
 
   useEffect(() => {
