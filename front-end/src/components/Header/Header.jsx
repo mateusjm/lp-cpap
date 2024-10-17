@@ -22,7 +22,7 @@ const Header = ({ logo }) => {
     <Navbar bg='light' expand='lg'>
       <Container id='nav'>
         <Navbar.Brand onClick={() => scrollToElement('home')} style={{ cursor: 'pointer' }}>
-          <img src={logo} alt="Pró-Vida Cirúrgica" width={150} />
+          <img src={logo} alt="Logo da Pró-Vida Cirúrgica" width={150} />
         </Navbar.Brand>
         <Navbar.Toggle 
           onClick={toggleMenu} 
@@ -59,7 +59,7 @@ const Header = ({ logo }) => {
               style={{ cursor: 'pointer', fontWeight: 500 }}
               className={`ms-auto ${styles.btn_style}`}
             >
-              <a target='_blank' href="https://api.whatsapp.com/message/K7V37SCXJ72KG1?autoload=1&app_absent=0">Entrar em Contato</a>
+              <a target='_blank' href="https://wa.me/message/K7V37SCXJ72KG1">Entrar em Contato</a>
             </Button>
           </Nav>
         </Navbar.Collapse>
