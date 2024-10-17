@@ -2,11 +2,12 @@ import React from 'react'
 import { useState, useEffect} from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap'
 import { Carousel } from 'react-bootstrap'
+import { useLocation } from 'react-router-dom'
 
 // CSS
 import styles from '../Home/Home.module.css'
 
-const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, provida, avaliacao1, avaliacao2, avaliacao3, avaliacao4, avaliacao5, avaliacao6, avaliacao7, avaliacao8, avaliacao9, apneiaPessoas}) => {
+const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, lojaProvida, avaliacao1, avaliacao2, avaliacao3, avaliacao4, avaliacao5, avaliacao6, avaliacao7, avaliacao8, avaliacao9, apneiaPessoas}) => {
 
   const location = useLocation();
 
