@@ -48,6 +48,18 @@ const Header = ({ logo }) => {
               Apneia do Sono
             </Nav.Link>
             <Nav.Link 
+              onClick={() => scrollToElement('mascaras')} 
+              className={`me-3 ${styles.active_link}`}
+            >
+              Máscaras
+            </Nav.Link>
+            <Nav.Link 
+              onClick={() => scrollToElement('apneia-do-sono')} 
+              className={`me-3 ${styles.active_link}`}
+            >
+              Apneia do Sono
+            </Nav.Link>
+            <Nav.Link 
               onClick={() => scrollToElement('faq')} 
               className={`me-3 ${styles.active_link}`}
             >

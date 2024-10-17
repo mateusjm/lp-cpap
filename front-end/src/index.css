@@ -19,7 +19,14 @@ span a {
 }
 
 img.reviews{
-  border-radius: 20px;
+  background-color: white;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transition: box-shadow 0.3s ease; 
+}
+
+img.reviews:hover {
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3); 
 }
 
 /* carousel */
@@ -136,12 +143,20 @@ div .cpap-div{
   background-color: white;
 }
 
+.provida-div {
+  background-color: #F8F9FA;
+}
+
 .reviews-div {
   background-color: #00bf63;
 }
 
 .apneia-do-sono-div {
   background-color: #00bf63;
+}
+
+.mascaras-div {
+  background-color: #F8F9FA;
 }
 
 .whatsapp-float {

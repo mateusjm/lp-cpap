@@ -7,6 +7,25 @@ import {  NavLink, useLocation } from 'react-router-dom';
 // CSS
 import styles from '../Home/Home.module.css'
 
+// mascaras cpap
+const mascarasCpap =[
+  {id: 1, name: 'Máscara Dream Wisp', src: 'https://live.staticflickr.com/65535/54073745575_29e42bba64_n.jpg',
+    text: 'A DreamWisp é uma máscara para CPAP que combina as máscaras Wisp e DreamWear, oferecendo leveza e conforto, ideal tanto para iniciantes quanto para usuários experientes. Seu design minimalista adapta-se a diferentes formatos de rosto, com almofadas macias e múltiplos tamanhos na mesma embalagem.'
+  },
+  {id: 2, name: 'Máscara Dream Ware', src: 'https://live.staticflickr.com/65535/54073545398_f28c3fc2a2_n.jpg',
+    text: 'A máscara nasal DreamWear destaca-se por seu design leve, confortável e estável, proporcionando uma experiência simples e silenciosa. Ela combina o conforto de uma máscara nasal com a leveza das almofadas nasais, apoiando-se abaixo do nariz sem cobri-lo ou adentrar nas narinas, o que evita marcas e irritação. '
+  },
+  {id: 3, name: 'Máscara Yuwell', src: 'https://live.staticflickr.com/65535/54073178247_d44097b626_n.jpg',
+    text: 'A máscara Yuwell é equipada com uma almofada de silicone leve, macia e hermética, projetada para reduzir a pressão facial e proporcionar maior conforto e ajuste. Seu arnês é feito de tecidos suaves e leves, com quatro pontos de apoio para garantir estabilidade e adaptação ao tratamento. A estrutura acrílica com apoio de testa oferece vedação eficiente para pacientes que precisam de mais estabilidade. '
+  },
+  {id: 4, name: 'Máscara Amara View', src: 'https://live.staticflickr.com/65535/54073292341_659041016b_n.jpg',
+    text: 'A máscara Amara View é ideal para usuários de CPAP que buscam conforto sem irritação na ponte nasal. Com um design inovador, ela proporciona um campo de visão livre, perfeita para quem usa óculos, gosta de assistir TV ou ler antes de dormir. Suas presilhas magnéticas facilitam o ajuste, e o conector 360º permite rápida liberação.'
+  },
+  {id: 5, name: 'Máscara Dreamwer Full', src: 'https://live.staticflickr.com/65535/54072405747_282928c6b6_n.jpg',
+    text: 'A máscara DreamWear Full Face é uma versão facial completa da máscara nasal DreamWear, cobrindo a boca e a parte inferior do nariz, ideal para quem precisa de terapia pelo nariz e boca. Ela inclui armações de tamanhos pequeno e médio na mesma embalagem, mas com uma única almofada, que deve ser adquirida no tamanho adequado conforme as instruções.'
+  }
+]
+
 const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, avaliacao1, avaliacao2, avaliacao3, avaliacao4, avaliacao5, avaliacao6, avaliacao7, avaliacao8, avaliacao9, apneiaPessoas, cpapGaslive, lojaProvida}) => {
 
   const location = useLocation();
@@ -38,6 +57,12 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, avali
 
     return () => window.removeEventListener('resize', verificarTamanhoTela);
   }, []);
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleClick = (index) => {
+    setCurrentIndex(index)
+  };
 
   return (
     <>
@@ -103,7 +128,7 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, avali
     </div>
     <div className='provida-div'>
       <Container
-        className={`d-flex align-items-center bg-white h-100 p-4`}
+        className={`d-flex align-items-center bg-light h-100 p-4`}
         id='home'
         >
         <Row className={`d-flex align-items-center justify-content-center`}>
@@ -228,6 +253,37 @@ const Home = ({banner1, banner2, banner3, banner1sm, banner2sm, banner3sm, avali
             </NavLink>
           </Col>
         </Row>
+      </Container>
+    </div>
+    <div className='mascaras-div'>
+      <Container
+        className={`d-flex align-items-center h-100 p-4`} 
+        id='mascaras'>
+          <Row className={`d-flex align-items-center`}>
+            <h1 className='text-center mt-5 mb-5'>Máscaras para Apneia do Sono</h1>
+            <Col xl={4} lg={6} md={12} xs={12} className='text-center mt-5'>
+              <img
+                className={`img-fluid ${styles.images_mascaras}`}
+                src={mascarasCpap[currentIndex].src} 
+                alt={mascarasCpap[currentIndex].name} />
+            </Col>
+            <Col xl={8} lg={6} md={12} xs={12}>
+              <h2 className='justify-content-end text-center mt-5 mb-5'>{mascarasCpap[currentIndex].name}</h2>
+              <p className={styles.text_justify}>{mascarasCpap[currentIndex].text}</p>
+            </Col>
+            <Col xs={12} className='d-flex align-items-end justify-content-center mt-5 mb-5'>
+              {mascarasCpap.map((image, index) => (
+                <Button
+                  variant='success'
+                  id='btn-mascaras'
+                  className='m-3'
+                  key={image.id} 
+                  onClick={() => handleClick(index)}>
+                    {image.id}
+                </Button>
+              ))} 
+            </Col>
+          </Row>
       </Container>
     </div>
     <div className='faq-div'>
